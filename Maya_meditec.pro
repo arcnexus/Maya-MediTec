@@ -13,11 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        inicio.cpp
+        inicio.cpp \
+    frmproductosherbolario.cpp
 
-HEADERS  += inicio.h
+HEADERS  += inicio.h \
+    frmproductosherbolario.h
 
-FORMS    += inicio.ui
+FORMS    += inicio.ui \
+    frmproductosherbolario.ui
 
 RESOURCES += \
     Maya_Meditec.qrc

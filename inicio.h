@@ -2,6 +2,7 @@
 #define INICIO_H
 
 #include <QMainWindow>
+#include "frmproductosherbolario.h"
 
 namespace Ui {
 class Inicio;
@@ -17,6 +18,8 @@ public:
     
 private:
     Ui::Inicio *ui;
+private slots:
+    void btnProd_herbolarios_clicked();
 };
 
 #endif // INICIO_H

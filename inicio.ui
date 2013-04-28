@@ -17,69 +17,34 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="1" column="1" colspan="3">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="0">
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="text">
-         <string>Base de datos
- Puntos de MTC</string>
-        </property>
-        <property name="icon">
-         <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/61-353x429.jpg</normaloff>:/maya/PNG/Images/61-353x429.jpg</iconset>
-        </property>
-        <property name="iconSize">
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
          <size>
-          <width>128</width>
+          <width>249</width>
           <height>128</height>
          </size>
         </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QPushButton" name="pushButton_6">
         <property name="text">
-         <string>Base de datos
-Fitoterapia China</string>
+         <string/>
         </property>
-        <property name="icon">
-         <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/medicinachina_thumb2.jpg</normaloff>:/maya/PNG/Images/medicinachina_thumb2.jpg</iconset>
+        <property name="pixmap">
+         <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/PNG/mayafondo_blanco.png</pixmap>
         </property>
-        <property name="iconSize">
-         <size>
-          <width>128</width>
-          <height>128</height>
-         </size>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="pushButton_3">
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="text">
          <string>Base de datos 
- Sindromes MTC</string>
+ Laboratorios</string>
         </property>
         <property name="icon">
          <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/china.jpg</normaloff>:/maya/PNG/Images/china.jpg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>128</width>
-          <height>128</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Base de datos 
- Productos herbolario</string>
-        </property>
-        <property name="icon">
-         <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/hierbas.jpeg</normaloff>:/maya/PNG/Images/hierbas.jpeg</iconset>
+          <normaloff>:/maya/PNG/Images/laboratorio11.jpg</normaloff>:/maya/PNG/Images/laboratorio11.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -107,24 +72,6 @@ Patologías</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>Base de datos 
- Laboratorios</string>
-        </property>
-        <property name="icon">
-         <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/laboratorio11.jpg</normaloff>:/maya/PNG/Images/laboratorio11.jpg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>128</width>
-          <height>128</height>
-         </size>
-        </property>
-       </widget>
-      </item>
       <item row="3" column="2">
        <widget class="QPushButton" name="pushButton_8">
         <property name="text">
@@ -134,6 +81,42 @@ Ayurveda</string>
         <property name="icon">
          <iconset resource="Maya_Meditec.qrc">
           <normaloff>:/maya/PNG/Images/ayurveda.jpeg</normaloff>:/maya/PNG/Images/ayurveda.jpeg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>128</width>
+          <height>128</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Base de datos 
+ Sindromes MTC</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Maya_Meditec.qrc">
+          <normaloff>:/maya/PNG/Images/china.jpg</normaloff>:/maya/PNG/Images/china.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>128</width>
+          <height>128</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>Base de datos
+Fitoterapia China</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Maya_Meditec.qrc">
+          <normaloff>:/maya/PNG/Images/medicinachina_thumb2.jpg</normaloff>:/maya/PNG/Images/medicinachina_thumb2.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -161,22 +144,39 @@ Homeopatía</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QLabel" name="label">
-        <property name="maximumSize">
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>Base de datos
+ Puntos de MTC</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Maya_Meditec.qrc">
+          <normaloff>:/maya/PNG/Images/61-353x429.jpg</normaloff>:/maya/PNG/Images/61-353x429.jpg</iconset>
+        </property>
+        <property name="iconSize">
          <size>
-          <width>249</width>
+          <width>128</width>
           <height>128</height>
          </size>
         </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btnProducto_herbolario">
         <property name="text">
-         <string/>
+         <string>Base de datos 
+ Productos herbolario</string>
         </property>
-        <property name="pixmap">
-         <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/PNG/mayafondo_blanco.png</pixmap>
+        <property name="icon">
+         <iconset resource="Maya_Meditec.qrc">
+          <normaloff>:/maya/PNG/Images/hierbas.jpeg</normaloff>:/maya/PNG/Images/hierbas.jpeg</iconset>
         </property>
-        <property name="scaledContents">
-         <bool>true</bool>
+        <property name="iconSize">
+         <size>
+          <width>128</width>
+          <height>128</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -195,6 +195,13 @@ Vademécum Farmácia</string>
           <width>128</width>
           <height>128</height>
          </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Salir</string>
         </property>
        </widget>
       </item>
@@ -341,6 +348,22 @@ Vademécum Farmácia</string>
     <hint type="destinationlabel">
      <x>426</x>
      <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Inicio</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>671</x>
+     <y>626</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>684</y>
     </hint>
    </hints>
   </connection>
