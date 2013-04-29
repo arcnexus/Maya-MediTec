@@ -7,13 +7,103 @@
     <x>0</x>
     <y>0</y>
     <width>1037</width>
-    <height>668</height>
+    <height>683</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
+   <item row="2" column="2" colspan="2">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Advertencias:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" rowspan="2">
+       <widget class="QTextEdit" name="txtcomposicion"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QTextEdit" name="txtadvertencias"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QTextEdit" name="txtcontra_indicaciones"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Contra-Indicaciones:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" rowspan="2">
+       <widget class="QTextEdit" name="txtindicaciones"/>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QTextEdit" name="txtprincipios_activos"/>
+      </item>
+      <item row="9" column="1">
+       <widget class="QTextEdit" name="txtpresentacion"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Presentación:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" rowspan="2">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Composición:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" rowspan="2">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Indicaciones:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="2">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Principios Activos:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
    <item row="1" column="1" colspan="2">
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="0" column="0">
@@ -24,7 +114,14 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="txtNombre_espanol_espana"/>
+      <widget class="QLineEdit" name="txtNombre"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>PVP:</string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0" colspan="2">
       <layout class="QGridLayout" name="gridLayout_2">
@@ -35,8 +132,8 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="1" rowspan="2">
-        <widget class="QTextEdit" name="textEdit_3">
+       <item row="0" column="1" rowspan="2" colspan="2">
+        <widget class="QTextEdit" name="txtDescripcion">
          <property name="maximumSize">
           <size>
            <width>16777215</width>
@@ -45,26 +142,42 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="2" rowspan="2">
-        <widget class="QLabel" name="label_11">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>80</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/Images/hierbas.jpeg</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
       </layout>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="txtPVP">
+       <property name="maximumSize">
+        <size>
+         <width>79</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0,00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="lblImagen">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/Images/hierbas.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -96,10 +209,24 @@
    <item row="2" column="0" colspan="2">
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="txtFiltrar_productos"/>
      </item>
      <item>
-      <widget class="QTableView" name="tableView"/>
+      <widget class="QTableView" name="tabla_productos">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(218, 255, 206);
+alternate-background-color: rgb(85, 255, 127);</string>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+      </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_10">
@@ -109,7 +236,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="txtLaboratorio"/>
      </item>
     </layout>
    </item>
@@ -129,249 +256,47 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btnSalir">
+        <property name="text">
+         <string>Salir</string>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="btnAnadir">
         <property name="text">
          <string>Añadir</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="btnDeshacer">
         <property name="text">
          <string>Deshacer</string>
         </property>
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="btnEditar">
         <property name="text">
          <string>Editar</string>
         </property>
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="btnBorrar">
         <property name="text">
          <string>Borrar</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btnGuardar">
         <property name="text">
          <string>Guardar</string>
         </property>
        </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton_6">
-        <property name="text">
-         <string>Salir</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item row="2" column="2" colspan="2">
-    <widget class="QFrame" name="frame">
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_5">
-      <item row="0" column="0">
-       <layout class="QGridLayout" name="gridLayout_4">
-        <property name="horizontalSpacing">
-         <number>10</number>
-        </property>
-        <property name="verticalSpacing">
-         <number>31</number>
-        </property>
-        <item row="7" column="0">
-         <spacer name="verticalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="label_6">
-          <property name="text">
-           <string>Contra-Indicaciones:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit_6">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>70</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string>Principios Activos:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>60</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_5">
-          <property name="text">
-           <string>Indicaciones:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit_2">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>60</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit_5">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>50</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="8" column="0">
-         <widget class="QLabel" name="label_8">
-          <property name="text">
-           <string>Composición:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="10" column="0">
-         <widget class="QLabel" name="label_9">
-          <property name="text">
-           <string>Presentación:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="5" column="0">
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="4" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit_4">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>50</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="0">
-         <spacer name="verticalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="6" column="0">
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>Advertencias:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="0">
-         <spacer name="verticalSpacer_6">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="10" column="1" rowspan="2">
-         <widget class="QTextEdit" name="textEdit_7">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>45</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
       </item>
      </layout>
     </widget>
@@ -383,7 +308,7 @@
  </resources>
  <connections>
   <connection>
-   <sender>pushButton_6</sender>
+   <sender>btnSalir</sender>
    <signal>clicked()</signal>
    <receiver>FrmProductosHerbolario</receiver>
    <slot>close()</slot>
@@ -398,5 +323,41 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnAnadir</sender>
+   <signal>clicked()</signal>
+   <receiver>FrmProductosHerbolario</receiver>
+   <slot>anadir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>793</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>568</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGuardar</sender>
+   <signal>clicked()</signal>
+   <receiver>FrmProductosHerbolario</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>823</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>anadir()</slot>
+  <slot>guardar()</slot>
+ </slots>
 </ui>

@@ -2,6 +2,8 @@
 #define FRMPRODUCTOSHERBOLARIO_H
 
 #include <QDialog>
+#include "global_includes.h"
+#include "producto_herbolario.h"
 
 namespace Ui {
 class FrmProductosHerbolario;
@@ -17,6 +19,14 @@ public:
     
 private:
     Ui::FrmProductosHerbolario *ui;
+    producto_herbolario oProd;
+private slots:
+    void anadir();
+    void guardar();
+    void llenarCampos();
+    void llenarObjeto();
+    void llenarTabla_productos();
+    void tabla_producto_clicked(QModelIndex index);
 };
 
 #endif // FRMPRODUCTOSHERBOLARIO_H
