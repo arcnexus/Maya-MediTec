@@ -1,6 +1,5 @@
 #include "producto_herbolario.h"
-
-
+#include "frmfechabaja.h"
 
 producto_herbolario::producto_herbolario(QObject *parent) :
     QObject(parent)
@@ -22,8 +21,9 @@ void producto_herbolario::anadirDatos()
 {
     QSqlQuery producto(QSqlDatabase::database("db_meditec"));
     if(producto.exec("INSERT INTO productos_herbolario (nombre) VALUES ('');")){
-        this->id = producto.lastInsertId().toInt();
         this->clear();
+        this->id = producto.lastInsertId().toInt();
+
     }
 }
 
@@ -39,6 +39,8 @@ void producto_herbolario::guardarDatos()
                      "composicion = :composicion,"
                      "presentacion = :presentacion,"
                      "advertencias = :advertencias,"
+                     "fecha_alta =:fecha_alta,"
+                     "principiosactivos =:principiosactivos,"
                      "id_laboratorio = :id_laboratorio "
                      "WHERE id =:id;");
     producto.bindValue(":nombre",this->nombre);
@@ -49,6 +51,8 @@ void producto_herbolario::guardarDatos()
     producto.bindValue(":composicion",this->composicion);
     producto.bindValue(":presentacion",this->presentacion);
     producto.bindValue(":advertencias",this->advertencias);
+    producto.bindValue(":fecha_alta",this->fechaalta);
+    producto.bindValue(":principiosactivos", this->principios_activos);
     producto.bindValue(":id_laboratorio",this->id_laboratorio);
     producto.bindValue(":id",this->id);
 
@@ -85,14 +89,34 @@ void producto_herbolario::recuperarDatos(int id_producto)
         this->advertencias = producto.record().value("advertencias").toString();
         this->id_laboratorio = producto.record().value("id_laboratorio").toInt();
         this->laboratorio = this->devolver_laboratorio(this->id_laboratorio);
+        this->fechaalta = producto.record().value("fecha_alta").toDate();
+        this->fechabaja = producto.record().value("fecha_baja").toDate();
+        this->principios_activos = producto.record().value("principiosactivos").toString();
+        this->esbaja = producto.record().value("baja").toBool();
     }
 
 
 }
 
-void producto_herbolario::borrarDatos()
+void producto_herbolario::baja(int id_producto)
 {
+    QSqlQuery producto(QSqlDatabase::database("db_meditec"));
+    producto.prepare("UPDATE productos_herbolario SET "
+                     "fecha_baja = :fechabaja,"
+                     "baja = :baja"
+                     " WHERE id =:id;");
+    producto.bindValue(":fechabaja",this->fechabaja);
+    producto.bindValue(":baja",this->esbaja);
+    producto.bindValue(":id",id_producto);
 
+    if(!producto.exec()){
+        QMessageBox::warning(qApp->activeWindow(),tr("ERROR"),
+                             tr("No se pudo guardar la información de baja: %1").arg(producto.lastError().text()),
+                             tr("Aceptar"));
+    } else {
+        QMessageBox::information(qApp->activeWindow(),tr("MODIFICAR PRODUCTO"),
+                                 tr("El producto ha sido correctamente dado de baja"),tr("Aceptar"));
+    }
 }
 
 void producto_herbolario::clear()
@@ -108,6 +132,10 @@ void producto_herbolario::clear()
     this->advertencias = "";
     this->id_laboratorio = -1;
     this->laboratorio = "";
+    this->principios_activos = "";
+    this->fechaalta= QDate::currentDate();
+    this->fechabaja= QDate::currentDate();
+    this->esbaja = false;
 
 }
 

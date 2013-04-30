@@ -7,14 +7,18 @@
     <x>0</x>
     <y>0</y>
     <width>1037</width>
-    <height>683</height>
+    <height>678</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Productos de herboristaría</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Maya_Meditec.qrc">
+    <normaloff>:/maya/PNG/PNG/mayafondo_blanco.png</normaloff>:/maya/PNG/PNG/mayafondo_blanco.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
-   <item row="2" column="2" colspan="2">
+   <item row="3" column="2" colspan="4">
     <widget class="QFrame" name="frame">
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -23,75 +27,7 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="6" column="0">
-       <widget class="QLabel" name="label_7">
-        <property name="text">
-         <string>Advertencias:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1" rowspan="2">
-       <widget class="QTextEdit" name="txtcomposicion"/>
-      </item>
-      <item row="6" column="1">
-       <widget class="QTextEdit" name="txtadvertencias"/>
-      </item>
-      <item row="4" column="1">
-       <widget class="QTextEdit" name="txtcontra_indicaciones"/>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_6">
-        <property name="text">
-         <string>Contra-Indicaciones:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1" rowspan="2">
-       <widget class="QTextEdit" name="txtindicaciones"/>
-      </item>
-      <item row="0" column="1" rowspan="2">
-       <widget class="QTextEdit" name="txtprincipios_activos"/>
-      </item>
-      <item row="9" column="1">
-       <widget class="QTextEdit" name="txtpresentacion"/>
-      </item>
-      <item row="9" column="0">
-       <widget class="QLabel" name="label_9">
-        <property name="text">
-         <string>Presentación:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="0" rowspan="2">
-       <widget class="QLabel" name="label_8">
-        <property name="text">
-         <string>Composición:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0" rowspan="2">
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Indicaciones:</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" rowspan="2">
+      <item row="0" column="0">
        <widget class="QLabel" name="label_4">
         <property name="text">
          <string>Principios Activos:</string>
@@ -101,10 +37,184 @@
         </property>
        </widget>
       </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QTextEdit" name="txtprincipios_activos"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Indicaciones:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="3">
+       <widget class="QTextEdit" name="txtindicaciones"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Contra-Indicaciones:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QTextEdit" name="txtcontra_indicaciones"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Advertencias:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Composición:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTextEdit" name="txtadvertencias"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Presentación:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QTextEdit" name="txtpresentacion"/>
+      </item>
+      <item row="4" column="1" colspan="3">
+       <widget class="QTextEdit" name="txtcomposicion"/>
+      </item>
      </layout>
     </widget>
    </item>
-   <item row="1" column="1" colspan="2">
+   <item row="0" column="1" colspan="2">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff5500;&quot;&gt;GESTIÓN DE LA BD DE FARMACOLOGÍA NATUROPÁTICA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/Images/hierbas.jpeg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>Fecha Alta:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDateEdit" name="txtFechaAlta">
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" rowspan="2">
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btnSalir">
+        <property name="text">
+         <string>Salir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btnAnadir">
+        <property name="text">
+         <string>Añadir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btnDeshacer">
+        <property name="text">
+         <string>Deshacer</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btnEditar">
+        <property name="text">
+         <string>Editar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btnBorrar">
+        <property name="text">
+         <string>Baja</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btnGuardar">
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="4">
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="0" column="0">
       <widget class="QLabel" name="label">
@@ -181,41 +291,42 @@
      </item>
     </layout>
    </item>
-   <item row="0" column="0" rowspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>128</width>
-       <height>128</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="Maya_Meditec.qrc">:/maya/PNG/Images/hierbas.jpeg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0" colspan="2">
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLineEdit" name="txtFiltrar_productos"/>
+   <item row="3" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Mostrar:</string>
+       </property>
+      </widget>
      </item>
-     <item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="txtFiltrar_productos">
+       <property name="maximumSize">
+        <size>
+         <width>298</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
       <widget class="QTableView" name="tabla_productos">
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(218, 255, 206);
-alternate-background-color: rgb(85, 255, 127);</string>
+        <string notr="true">background-color: rgb(255,255,255);
+alternate-background-color: rgb(237, 255, 196);</string>
        </property>
        <property name="alternatingRowColors">
         <bool>true</bool>
@@ -228,77 +339,33 @@ alternate-background-color: rgb(85, 255, 127);</string>
        </attribute>
       </widget>
      </item>
-     <item>
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>Laboratorio:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="txtLaboratorio"/>
-     </item>
     </layout>
    </item>
-   <item row="0" column="1" colspan="2">
-    <widget class="QLabel" name="label_3">
+   <item row="2" column="2">
+    <widget class="QLabel" name="lblFechaBaja">
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff5500;&quot;&gt;GESTIÓN DE LA BD DE FARMACOLOGÍA NATUROPÁTICA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Fecha Baja:</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="3" rowspan="2">
-    <widget class="QFrame" name="frame_2">
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Laboratorio:</string>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="txtLaboratorio"/>
+   </item>
+   <item row="2" column="3">
+    <widget class="QDateEdit" name="txtFechaBaja">
+     <property name="enabled">
+      <bool>false</bool>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="1">
-       <widget class="QPushButton" name="btnSalir">
-        <property name="text">
-         <string>Salir</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="btnAnadir">
-        <property name="text">
-         <string>Añadir</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="btnDeshacer">
-        <property name="text">
-         <string>Deshacer</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="btnEditar">
-        <property name="text">
-         <string>Editar</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="btnBorrar">
-        <property name="text">
-         <string>Borrar</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="btnGuardar">
-        <property name="text">
-         <string>Guardar</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
     </widget>
    </item>
   </layout>
@@ -330,8 +397,8 @@ alternate-background-color: rgb(85, 255, 127);</string>
    <slot>anadir()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>793</x>
-     <y>39</y>
+     <x>923</x>
+     <y>53</y>
     </hint>
     <hint type="destinationlabel">
      <x>568</x>
@@ -346,8 +413,8 @@ alternate-background-color: rgb(85, 255, 127);</string>
    <slot>guardar()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>823</x>
-     <y>123</y>
+     <x>923</x>
+     <y>135</y>
     </hint>
     <hint type="destinationlabel">
      <x>630</x>
@@ -355,9 +422,26 @@ alternate-background-color: rgb(85, 255, 127);</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnBorrar</sender>
+   <signal>clicked()</signal>
+   <receiver>FrmProductosHerbolario</receiver>
+   <slot>baja()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>973</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>anadir()</slot>
   <slot>guardar()</slot>
+  <slot>baja()</slot>
  </slots>
 </ui>

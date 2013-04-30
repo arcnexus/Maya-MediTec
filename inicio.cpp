@@ -18,5 +18,6 @@ Inicio::~Inicio()
 void Inicio::btnProd_herbolarios_clicked()
 {
     FrmProductosHerbolario herbol(this);
+    herbol.setWindowState(Qt::WindowMaximized);
     herbol.exec();
 }

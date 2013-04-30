@@ -2,6 +2,8 @@
 #include "ui_frmproductosherbolario.h"
 #include "configuracion.h"
 #include "producto_herbolario.h"
+#include "frmfechabaja.h"
+
 
 FrmProductosHerbolario::FrmProductosHerbolario(QWidget *parent) :
     QDialog(parent),
@@ -39,6 +41,25 @@ void FrmProductosHerbolario::guardar()
     llenarTabla_productos();
 }
 
+void FrmProductosHerbolario::baja()
+{
+    if(QMessageBox::question(qApp->activeWindow(),tr("Atención"),
+    tr("¿Desea dar de baja este producto?\nLos productos dados de baja siguen en la BD \npero figuran con fecha de baja"),
+    tr("Cancelar"),tr("Dar de baja"))==QMessageBox::Accepted)
+    {
+        FrmFechaBaja frmbaja(this);
+       if(frmbaja.exec() == QDialog::Accepted){
+           oProd.fechabaja = frmbaja.fechabaja;
+           oProd.baja(oProd.id);
+           ui->txtFechaBaja->setDate(oProd.fechabaja);
+
+       }
+
+    }
+
+
+}
+
 void FrmProductosHerbolario::llenarCampos()
 {
     oProd.recuperarDatos(oProd.id);
@@ -47,10 +68,22 @@ void FrmProductosHerbolario::llenarCampos()
     ui->txtcontra_indicaciones->setText(oProd.contraindicaciones);
     ui->txtPVP->setText(QString::number(oProd.precio,'f',2));
     ui->txtindicaciones->setText(oProd.indicaciones);
+    ui->txtprincipios_activos->setText(oProd.principios_activos);
     ui->txtcomposicion->setText(oProd.composicion);
     ui->txtpresentacion->setText(oProd.presentacion);
     ui->txtadvertencias->setText(oProd.advertencias);
     ui->txtLaboratorio->setText(oProd.laboratorio);
+    ui->txtFechaBaja->setDate(oProd.fechabaja);
+    ui->txtFechaAlta->setDate(oProd.fechaalta);
+    if(oProd.esbaja) {
+        ui->txtFechaBaja->setVisible(true);
+        ui->lblFechaBaja->setVisible(true);
+    } else
+    {
+        ui->txtFechaBaja->setVisible(false);
+        ui->lblFechaBaja->setVisible(false);
+    }
+
 
 }
 
@@ -65,6 +98,7 @@ void FrmProductosHerbolario::llenarObjeto()
     oProd.presentacion = ui->txtpresentacion->toPlainText();
     oProd.advertencias = ui->txtadvertencias->toPlainText();
     oProd.laboratorio = ui->txtLaboratorio->text();
+    oProd.fechaalta = ui->txtFechaAlta->date();
 }
 
 void FrmProductosHerbolario::llenarTabla_productos()

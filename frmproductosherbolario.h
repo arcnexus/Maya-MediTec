@@ -23,6 +23,7 @@ private:
 private slots:
     void anadir();
     void guardar();
+    void baja();
     void llenarCampos();
     void llenarObjeto();
     void llenarTabla_productos();

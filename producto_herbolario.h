@@ -20,13 +20,17 @@ public:
     QString advertencias;
     int id_laboratorio;
     QString laboratorio;
+    QDate fechaalta;
+    QDate fechabaja;
+    QString principios_activos;
+    bool esbaja;
 
     void recuperarImagen();
     void guardarImagen();
     void anadirDatos();
     void guardarDatos();
     void recuperarDatos(int id_producto);
-    void borrarDatos();
+    void baja(int id_producto);
     void clear();
     QString devolver_laboratorio(int id_laboratorio);
     int devolver_id_laboratorio(QString laboratorio);
