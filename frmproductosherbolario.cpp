@@ -99,6 +99,7 @@ void FrmProductosHerbolario::llenarObjeto()
     oProd.advertencias = ui->txtadvertencias->toPlainText();
     oProd.laboratorio = ui->txtLaboratorio->text();
     oProd.fechaalta = ui->txtFechaAlta->date();
+    oProd.principios_activos = ui->txtprincipios_activos->toPlainText();
 }
 
 void FrmProductosHerbolario::llenarTabla_productos()
