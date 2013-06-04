@@ -21,8 +21,8 @@
        <widget class="QLabel" name="label">
         <property name="maximumSize">
          <size>
-          <width>249</width>
-          <height>128</height>
+          <width>193</width>
+          <height>101</height>
          </size>
         </property>
         <property name="text">
@@ -48,8 +48,8 @@
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -66,26 +66,26 @@ Patologías</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
       </item>
       <item row="3" column="2">
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="btn_fitoterapia_occidental">
         <property name="text">
          <string>Base de datos 
-Ayurveda</string>
+Fitoterapia occidental</string>
         </property>
         <property name="icon">
          <iconset resource="Maya_Meditec.qrc">
-          <normaloff>:/maya/PNG/Images/ayurveda.jpeg</normaloff>:/maya/PNG/Images/ayurveda.jpeg</iconset>
+          <normaloff>:/maya/PNG/PNG/Hierbas_medicinales.png</normaloff>:/maya/PNG/PNG/Hierbas_medicinales.png</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -102,8 +102,8 @@ Ayurveda</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -120,8 +120,8 @@ Fitoterapia China</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -138,8 +138,8 @@ Homeopatía</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -156,8 +156,8 @@ Homeopatía</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -174,8 +174,8 @@ Homeopatía</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -192,8 +192,8 @@ Vademécum Farmácia</string>
         </property>
         <property name="iconSize">
          <size>
-          <width>128</width>
-          <height>128</height>
+          <width>84</width>
+          <height>84</height>
          </size>
         </property>
        </widget>
@@ -241,7 +241,7 @@ Vademécum Farmácia</string>
      <x>0</x>
      <y>0</y>
      <width>939</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMantenimientos">

@@ -5,8 +5,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QTextCodec *linuxCodec = QTextCodec::codecForName("UTF-8");
-    QTextCodec::setCodecForTr(linuxCodec);
-    QTextCodec::setCodecForCStrings(linuxCodec);
+    //QTextCodec::setCodecForTr(linuxCodec);
+   // QTextCodec::setCodecForCStrings(linuxCodec);
     Inicio w;
     w.showMaximized();
     

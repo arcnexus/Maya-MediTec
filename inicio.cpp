@@ -21,3 +21,10 @@ void Inicio::btnProd_herbolarios_clicked()
     herbol.setWindowState(Qt::WindowMaximized);
     herbol.exec();
 }
+
+void Inicio::on_btn_fitoterapia_occidental_clicked()
+{
+    Frm_Plantas_medicinales pm(this);
+    pm.setWindowState(Qt::WindowMaximized);
+    pm.exec();
+}

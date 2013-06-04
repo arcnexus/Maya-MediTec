@@ -111,6 +111,8 @@ void FrmProductosHerbolario::llenarTabla_productos()
     ui->tabla_productos->setColumnWidth(1,200);
 }
 
+
+
 void FrmProductosHerbolario::tabla_producto_clicked(QModelIndex index)
 {
     oProd.id =ui->tabla_productos->model()->data(ui->tabla_productos->model()->index(index.row(),0),Qt::EditRole).toInt();

@@ -20,18 +20,23 @@ SOURCES += main.cpp\
     frmproductosherbolario.cpp \
     configuracion.cpp \
     producto_herbolario.cpp \
-    frmfechabaja.cpp
+    frmfechabaja.cpp \
+    frm_plantas_medicinales.cpp \
+    plantas.cpp
 
 HEADERS  += inicio.h \
     frmproductosherbolario.h \
     configuracion.h \
     producto_herbolario.h \
     global_includes.h \
-    frmfechabaja.h
+    frmfechabaja.h \
+    frm_plantas_medicinales.h \
+    plantas.h
 
 FORMS    += inicio.ui \
     frmproductosherbolario.ui \
-    frmfechabaja.ui
+    frmfechabaja.ui \
+    frm_plantas_medicinales.ui
 
 RESOURCES += \
     Maya_Meditec.qrc
